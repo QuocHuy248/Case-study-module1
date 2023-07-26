@@ -136,7 +136,6 @@ function play(number) {
   changeBlockPosition();
   setIntervalId = setInterval(initGame, number);
   document.addEventListener("keyup", changeDirection);
-  pausebutton.style.display = "block";
 }
 //play again
 document.getElementById("playagain").addEventListener("click", function () {
@@ -169,19 +168,6 @@ btnbacktomenu.addEventListener("click", function () {
   location.reload();
 });
 
-//
-//     }
-//   };
-// }
-// khi nhấn pause thì divcontinue xuất hiện hỏi có muốn tiếp tục chơi không
-
-// khi nhấn continue cho chạy lại init game
-
-//khi nhấn backtomenu thì load lại trang
-
-//khi nhấn playagain chơi lại ở chế độ đã chọn
-
-//khi nhấn nút play thì chuyển sang chế độ chọn độ khó
 document
   .getElementById("btnPlay")
   .addEventListener("click", function playgame() {
