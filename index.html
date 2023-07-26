@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Snake Game JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="game-details">
+        <span class="score">Score: 0</span>
+        <span id="difficulty"></span>
+        <button id="btnpause">Pause</button>
+        <span class="high-score">High Score: 0</span>
+      </div>
+      <div class="play-board">
+        <div id="playonboard"></div>
+        <div id="divmenu">
+          <div id="welcomemenuList">
+            <h1 class="welcomemenu" id="welcometext">Welcome to Snake game</h1>
+            <button class="welcomemenu" id="btnPlay">Play game</button>
+          </div>
+          <div id="divplayagain">
+            <p id="losecase">YOU LOSE!!</p>
+            <button id="playagain">Play again</button>
+          </div>
+          <div id="divcontinue">
+            <p>Do you want to countinue?</p>
+            <button id="playcontinue">Continue</button>
+            <button id="btnback">Back to menu</button>
+          </div>
+
+          <div id="choosemenuList">
+            <p id="choosetext">Select your difficulty</p>
+
+            <button id="easybtn">Easy</button>
+            <button id="mediumbtn">Medium</button>
+            <button id="hardbtn">Hard</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

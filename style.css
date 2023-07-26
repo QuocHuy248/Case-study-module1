@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Minecraft;
+  src: url(1_Minecraft-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Minecraft;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e3f2fd;
+}
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+.game-details {
+  color: #b8c6dc;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board {
+  height: 100%;
+  width: 100%;
+  background: #212837;
+
+  position: relative;
+}
+#playonboard {
+  height: 100%;
+  width: 100%;
+  background: #212837;
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  position: relative;
+}
+.play-board .food {
+  background: #ff003d;
+}
+.play-board .head {
+  background: #60cbff;
+}
+.play-board .food2 {
+  background: #ffcc00;
+}
+
+.play-board .block {
+  background: #996600;
+}
+button {
+  background-color: #666699;
+}
+#divmenu {
+  width: 250px;
+  height: 200px;
+  background-color: #212837;
+  position: absolute;
+  left: 130px;
+  top: 100px;
+}
+#welcometext {
+  color: #f00000;
+}
+#btnPlay {
+  margin: 20px 50px;
+}
+#btnChoose {
+  margin: 10px 30px;
+}
+
+#mediumbtn {
+  margin: 10px 65px;
+}
+#easybtn {
+  margin: 10px 70px;
+}
+#hardbtn {
+  margin: 10px 68px;
+}
+#backtomenubtn {
+  margin: 10px 40px;
+}
+#choosemenuList {
+  display: none;
+}
+#againbtn {
+  display: none;
+}
+#playagain {
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  margin: 10px 50px;
+}
+#divplayagain {
+  display: none;
+}
+#btnpause {
+  color: #b8c6dc;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #293447;
+  display: none;
+  justify-content: space-between;
+}
+#divcontinue {
+  display: none;
+}
+#playcontinue {
+  margin: 10px 70px;
+}
+#btnback {
+  margin: 10px 55px;
+}
+#losecase {
+  margin: 10px 45px;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+}
