@@ -162,23 +162,7 @@ document.getElementById("playagain").addEventListener("click", function () {
     play(number);
   }
 });
-//pause
-let pausebutton = document.getElementById("btnpause");
 
-pausebutton.addEventListener("click", function () {
-  clearInterval(setIntervalId);
-  menu.style.display = "block";
-  continuemenu.style.display = "block";
-  playagainmenu.style.display = "none";
-});
-
-//continue
-let btncontinue = document.getElementById("playcontinue");
-btncontinue.addEventListener("click", function () {
-  setInterval(initGame, number);
-  menu.style.display = "none";
-  continuemenu.style.display = "none";
-});
 //backtomenu
 let btnbacktomenu = document.getElementById("btnback");
 btnbacktomenu.addEventListener("click", function () {

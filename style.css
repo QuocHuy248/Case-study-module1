@@ -102,13 +102,12 @@ button {
   display: none;
 }
 #playagain {
-  position: absolute;
-  height: 50px;
+  height: 40px;
   width: 70px;
   margin: 10px 50px;
 }
 #divplayagain {
-  display: none;
+  display: none ;
 }
 #btnpause {
   color: #b8c6dc;
@@ -118,14 +117,9 @@ button {
   display: none;
   justify-content: space-between;
 }
-#divcontinue {
-  display: none;
-}
-#playcontinue {
-  margin: 10px 70px;
-}
+
 #btnback {
-  margin: 10px 55px;
+  margin: 10px 43px;
 }
 #losecase {
   margin: 10px 45px;
